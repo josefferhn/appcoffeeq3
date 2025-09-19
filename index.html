@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee App</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<div id="app">
+			
+		<section id="panel" class="panel panel-left panel-cover">
+			
+			<div id="panel-profile" class="block">
+				<img src="img/profile-avatar.png" alt="" class="img-fluid">
+				<h4>Esther Howard</h4>
+			</div>
+			
+			<div class="block">
+			
+				<div id="menu-list" class="list media-list__">
+					<ul>
+						<li>
+							<a href="/home/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">home</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Home</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/categories/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">ballot</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Categories</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/hot-coffees/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">coffee</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Hot Coffees</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/cold-coffees/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">ac_unit</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Cold Coffees</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/points/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">loyalty</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Coffee's Point</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/favorites/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">favorite_border</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">My Favorites</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/orders/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">book</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">My Orders</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/profile/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="material-icons">account_circle</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Profile</div>
+								</div>
+							</a>
+						</li>
+					</ul>				
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		
+		<div class="view view-main view-init">
+        
+			<section data-name="home" class="page">
+
+			  <!-- Top Navbar -->
+			  <nav class="navbar">
+				<div class="navbar-bg"></div>
+				<div class="navbar-inner">
+				  	<div class="title">App</div>
+					<div class="right">
+						<a href="#" class="link panel-open" data-panel="left">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</div>
+			  </nav>
+
+
+			<section class="page-content">
+
+				<div id="welcome" class="block">
+					<h1><span>Today's</span> <br>Special Offer</h1>
+				</div>
+				
+				<div id="producto" class="block">
+					<article class="card">
+						<div class="card-content card-content-padding">
+							<div class="row">
+								<article class="col-30">
+									<h3>Chocolate Ice Coffee</h3>
+									<ul>
+										<li>Large Size</li>
+										<li>Extra Cream</li>
+									</ul>
+								</article>
+								<article class="col-70">
+									<img src="img/caramel-frappe.png" alt="" class="img-fluid">
+								</article>
+							</div>
+							<div class="row">
+								<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque dolores, facilis, eligendi eum repellat possimus iste tempore. Maxime, veniam.</p>
+							</div>
+							<div class="row mt-5">
+								<article class="col-40">
+									<p class="precio"><span class="color-gris"><s>$10</s></span> <i class="material-icons">east</i> $7</p>
+								</article>
+								<article class="col-60">
+									<a href="/product/" class="button button-fill button-round">Order Now</a>
+								</article>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<h2 class="block-title">Hot Coffees</h2>
+				<div id="hot-coffees" class="block card-productos">
+					<div class="row">
+						<article class="col">
+							<div class="card">
+								<div class="card-content card-content-padding">
+									<img src="img/cafe-espresso.png" alt="" class="img-fluid">
+									<h4>Americano</h4>
+									<p>Caffeine 175mg</p>
+									<a href="/americano/"><i class="material-icons">add_shopping_cart</i></a>
+								</div>
+							</div>
+						</article>
+						
+						<article class="col">
+							<div class="card">
+								<div class="card-content card-content-padding">
+									<img src="img/cafe-capuccino.png" alt="" class="img-fluid">
+									<h4>Capuccino</h4>
+									<p>Caffeine 175mg</p>
+									<a href="/product/"><i class="material-icons">add_shopping_cart</i></a>
+								</div>
+							</div>
+						</article>						
+					</div>
+				</div>
+				
+				<h2 class="block-title">Cold Coffees</h2>
+				<div id="cold-coffees" class="block card-productos">
+					<div class="swiper-container swiper-init" data-slides-per-view="2" data-space-between="0" data-centered-slides="true">
+						
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card-content card-content-padding">
+										<img src="img/caramel-frappe.png" alt="" class="img-fluid">
+										<h4>Caramel Frappe</h4>
+										<p>Caffeine 175mg</p>
+										<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+									</div>
+								</article>
+							</div>
+							
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card-content card-content-padding">
+										<img src="img/chocolate-frappe.jpg" alt="" class="img-fluid">
+										<h4>Chocolate Frappe</h4>
+										<p>Caffeine 175mg</p>
+										<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+									</div>
+								</article>
+							</div>
+							
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card-content card-content-padding">
+										<img src="img/chai-frappe.jpg" alt="" class="img-fluid">
+										<h4>Chai Frappe</h4>
+										<p>Caffeine 175mg</p>
+										<a href="/producto/"><i class="material-icons">add_shopping_cart</i></a>
+									</div>
+								</article>
+							</div>
+							
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card-content card-content-padding">
+										<img src="img/iced-americano.jpg" alt="" class="img-fluid">
+										<h4>Ice Americano</h4>
+										<p>Caffeine 175mg</p>
+										<a href="/americano/"><i class="material-icons">add_shopping_cart</i></a>
+									</div>
+								</article>
+							</div>
+							
+						</div><!-- /swiper-wrapper -->
+						
+					</div><!-- /swiper-container -->
+				</div>
+
+			</section> <!--/page-content -->
+
+			</section> <!--/page -->
+			
+			
+			<nav class="toolbar tabbar tabbar-labels__ toolbar-bottom">
+				<div class="toolbar-inner">
+					<a href="/home/" class="tab-link tab-link-active">
+						<i class="material-icons">home</i>
+						<!--<span class="tabbar-label">Home</span>-->
+					</a>
+					<a href="/view/" class="tab-link">
+						<i class="material-icons">favorite</i>
+						<!--<span class="tabbar-label">Favorites</span>-->
+					</a>
+					<a href="/cards/" class="tab-link">
+						<i class="material-icons">shopping_basket</i>
+						<!--<span class="tabbar-label">Cart</span>-->
+					</a>
+				</div>
+			</nav>
+			
+		</div><!--/view -->
+		
+		
+<section class="login-screen modal-in" id="modal-login">
+    <div class="view">
+      <div class="page">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">Coffee App</div>
+          <form id="form-login">
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" placeholder="Your username" required>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Your password" required>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list block">
+              <ul>
+                <li><a id="btnLogin" class="button button-fill" href="#">Sign In</a></li>
+              </ul>
+              <div class="block-footer">
+                <p><a class="link login-screen-close" href="#">Acceder como Invitado</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+		
+		
+		
+	</div><!--/app -->
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+	
+	
+	
+</body>
+</html>
